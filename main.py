@@ -1,2 +1,4 @@
+from hw4.hw4 import solve_homework_4
+
 if __name__ == "__main__":
-    print("Hello, Python!")
+    solve_homework_4()
