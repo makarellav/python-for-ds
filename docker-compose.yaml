@@ -1,0 +1,15 @@
+services:
+  db:
+    image: mysql
+    container_name: hw7
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: hw7
+    ports:
+      - 3366:3306
+    volumes:
+      - hw7:/var/lib/mysql
+    
+volumes:
+  hw7:
